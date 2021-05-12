@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Phaser3 - ES6 - Webpack</title>
+  <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="format-detection" content="telephone=no">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #221817;
+    }
+
+    @font-face {
+      font-family: 'Courgette-Regular';
+      src: url("../assets/fonts/Courgette-Regular.ttf");
+    }
+
+    #preload-font {
+      font-family: 'Courgette-Regular', sans-serif;
+      text-indent: -9999px;
+      font-size: 0;
+    }
+
+    @font-face {
+      font-family: 'Rubik-Black';
+      src: url("../assets/fonts/Rubik-Black.ttf");
+    }
+
+    #rubik-black-font {
+      font-family: 'Rubik-Black', sans-serif;
+      text-indent: -9999px;
+      font-size: 0;
+    }
+
+    @font-face {
+      font-family: 'Rubik-Bold';
+      src: url("../assets/fonts/Rubik-Bold.ttf");
+    }
+
+    #rubik-bold-font {
+      font-family: 'Rubik-Bold', sans-serif;
+      text-indent: -9999px;
+      font-size: 0;
+    }
+
+    @font-face {
+      font-family: 'EUR42';
+      src: url("../assets/fonts/EUR42.otf");
+    }
+
+    #dancing-font {
+      font-family: 'EUR42', sans-serif;
+      text-indent: -9999px;
+      font-size: 0;
+    }
+
+    /*Centering canvas to the middle of a screen is screen width goes over limit*/
+    canvas {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    input {
+      position: absolute;
+      bottom: 0;
+      width: 96vw;
+      border-radius: 10px;
+      background: #ffffff;
+      font-size: 8vw;
+      color: #274750;
+      margin: 1vw;
+      text-align: center;
+      visibility: hidden;
+      font-family: 'main_fonts', sans-serif;
+      outline: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!--USERNAME INPUT-->
+<input id="username" type="text" placeholder="Enter your username" maxlength="9">
+<!--USERNAME INPUT-->
+
+
+<span id="preload-font"></span>
+<span id="dancing-font"></span>
+<span id="rubik-black-font"></span>
+<span id="rubik-bold-font"></span>
+<div id="content"></div>
+</body>
